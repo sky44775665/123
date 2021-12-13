@@ -1,0 +1,23 @@
+def fact_loop(num):
+
+    if num < 0:
+        return 0
+    if num == 0:
+        return 1
+
+    factorial = 1
+    for k in range(1, num + 1):
+        factorial = k * factorial
+
+    return factorial
+
+# Using recursion
+def fact_recursion(num):
+
+    if num < 0:
+        return 0
+
+    if num == 0:
+        return 1
+
+    return num * fact_recursion(num - 1)
